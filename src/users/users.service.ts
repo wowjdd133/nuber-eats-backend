@@ -18,7 +18,7 @@ export class UsersService {
     constructor(
         @InjectRepository(User) private readonly users: Repository<User>,
         @InjectRepository(Verification) private readonly verification: Repository<Verification>,
-        private readonly config: ConfigService,
+        // private readonly config: ConfigService,
         private readonly jwtService:JwtService,
         private readonly mailSerfice: MailService,
     ) {}
